@@ -33,16 +33,16 @@ Enter your name: <input type="input" name="name"><br>
 
 那么，以上代码中，哪些部分属于客户端的内容，哪些属于服务端的内容？（1分）
 
-**客户端<br>
+**客户端**<br>
 <form method="GET">
 Enter your name: <input type="input" name="name"><br>
 <input type=" submit"><br>
-服务端<br>
+**服务端**<br>
 <?php
 if(isset($_GET[ ' name ' ])){
 echo "<h1>Hello {$_GET['name']} !</h1>";
 }
-?>**
+?><br>
 客户端是通过传递什么参数来控制服务端代码的？（1分）
 
 **name**
